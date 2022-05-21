@@ -3,4 +3,4 @@ node_modules
 package-lock.json
 
 # environment
-.env
+.env.production
