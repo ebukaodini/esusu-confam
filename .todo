@@ -1,0 +1,33 @@
+Backend Test:
+
+  Summary:
+    Esusu Confam Ltd, a long-running Co-operative in Nigeria wants to digitalise their operations so 
+    they have contacted you - a backend developer to help them with it. They want to build a simple
+    platform that helps them save a fixed amount automatically every week and then one of the
+    members collects the money at the end of every month.
+    
+    At the beginning of the tenure, a random table of who collects all the money each month is
+    generated for the group. When a new member joins, they are automatically added to the bottom
+    of the list. The group can contain any number of members and the platform can contain any
+    number of groups.
+    
+    Every group has a group admin. The periodic amount to be saved at the beginning is defined by
+    the admin. Other things defined by the admin include group name, group description, maximum
+    capacity, if the group is searchable or not.
+    Your task is to create a REST API for this with node.js
+
+  Stories:
+    ✔ As a user, I want to enter my basic details so I can register on the platform @done(22-05-21 14:47)
+    ✔ As a user, I want to set up my savings group preferences so I can start a co-operative on the platform and become a group admin. @done(22-05-21 16:09)
+    ✔ As a user I want to be able to search public groups that I can join on the platform. @done(22-05-21 16:26)
+    ✔ As a group admin, I want to be able to see a list of all members in my group and how much they have saved @done(22-05-21 20:08)
+    ✔ As an admin, I want to be able to send out a group invitation and add a user to the group via a unique ID. @done(22-05-21 20:08)
+
+    Note:
+    - Feel free to make any other assumptions. Brush up on your "Esusu" knowledge here
+
+  Submission:
+    ✔ Create a GitHub repo containing the solution to the backend test @done(22-05-21 21:00)
+    ✔ Create a Readme.md file for setup instructions @done(22-05-21 20:25)
+    ✔ Deploy On Heroku @done(22-05-21 21:00)
+    ✔ Add API documentation @done(22-05-21 21:00)
