@@ -5,6 +5,7 @@ const groups = require('../models/groups.model');
 const { badRequest, serverError, success } = require('../utils/reponse-helpers');
 const passwordHash = require('password-hash');
 const groupMember = require('../models/group-member.model');
+var validator = require('validator');
 
 // /auth
 router.post('/login', (req, res) => {
@@ -38,6 +39,18 @@ const createMember = async (user) => {
 router.post('/register', (req, res) => {
   try {
     const { firstname, lastname, telephone, email, password, group } = req.body;
+
+    // validation
+    const errors = []
+    if (firstname.trim().length < 1) errors.push('Please enter a valid firstname.')
+    if (lastname.trim().length < 1) errors.push('Please enter a valid lastname.')
+    if (validator.isEmail(email.trim())) errors.push('Please enter a valid email.')
+    if (lastname.trim().length < 6) errors.push('Password must be atleast 6 characters.')
+    if (lastname.trim().length < 10) errors.push('Please enter a valid telephone.')
+
+    if (errors.length > 0)
+      return badRequest(res, 'Invalid fields', errors)
+
     const hash = passwordHash.generate(password)
 
     members.find({ email: email })
