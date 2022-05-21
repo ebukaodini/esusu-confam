@@ -1,6 +1,7 @@
 # ESUSU CONFAM
 Esusu Confam Ltd, a long-running Co-operative in Nigeria
 
+https://esusu-confam-api.herokuapp.com
 
 
 ## Setup
@@ -42,5 +43,3 @@ $ npm start
 ## API Documentation
 https://documenter.getpostman.com/view/6884204/UyxoijAT
 
-## App on Heroku
-https://esusu-confam-api.herokuapp.com
