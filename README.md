@@ -27,15 +27,17 @@ then
 Replace <generated-token-secret> with the hexa-decimal output from the command above.
 
 
-
 ## Test
 ```bash
 $ npm run test
 ```
 
 
-
 ## Run
 ```bash
 $ npm start
 ```
+
+
+## API Documentation
+https://documenter.getpostman.com/view/6884204/UyxoijAT
